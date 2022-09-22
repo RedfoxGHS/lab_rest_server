@@ -9,15 +9,15 @@ public class Curso implements Comparable<Curso> {
 
     private String descricao;
 
-    private Integer cargaHorario;
+    private Integer cargaHoraria;
 
     public Curso() {
     }
 
-    public Curso(Long id, String descricao, Integer cargaHorario) {
+    public Curso(Long id, String descricao, Integer cargaHoraria) {
         this.id = id;
         this.descricao = descricao;
-        this.cargaHorario = cargaHorario;
+        this.cargaHoraria = cargaHoraria;
     }
 
 
@@ -37,12 +37,12 @@ public class Curso implements Comparable<Curso> {
         this.descricao = descricao;
     }
 
-    public Integer getCargaHorario() {
-        return cargaHorario;
+    public Integer getCargaHoraria() {
+        return cargaHoraria;
     }
 
-    public void setCargaHorario(Integer cargaHorario) {
-        this.cargaHorario = cargaHorario;
+    public void setCargaHoraria(Integer cargaHoraria) {
+        this.cargaHoraria = cargaHoraria;
     }
 
     @Override

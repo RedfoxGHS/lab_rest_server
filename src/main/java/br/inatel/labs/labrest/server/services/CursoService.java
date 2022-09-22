@@ -65,13 +65,14 @@ public class CursoService {
         return curso;
     }
 
-    public void atualizarCurso(Curso curso) {
+    public Curso atualizarCurso(Curso curso) {
         if (!listaDeCursos.remove(curso)) {
             String msg = "Nenhum Curso encontrado com id: " + curso.getId();
             throw new ResponseStatusException(HttpStatus.NOT_FOUND, msg);
         }
 
         listaDeCursos.add(curso);
+        return curso;
     }
 
     public boolean deletaPorId(Long id) {

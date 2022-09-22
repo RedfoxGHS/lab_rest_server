@@ -54,8 +54,8 @@ public class CursoController {
                     "Curso deve ter um Id valido")
     @PutMapping
     @ResponseStatus(code = HttpStatus.ACCEPTED)
-    public void atualizar(@RequestBody Curso curso) {
-        cursoService.atualizarCurso(curso);
+    public Curso atualizar(@RequestBody Curso curso) {
+        return cursoService.atualizarCurso(curso);
     }
 
 
